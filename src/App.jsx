@@ -27,19 +27,37 @@ const App = () => {
 
 
   // card skins
+  // const cardSkins = [
+  //   '/card-back-1.png', '/card-back-2.png', '/card-back-3.gif', '/card-back-4.gif', '/card-back-5.png',
+  //   '/card-back-6.gif', '/card-back-7.png', '/card-back-8.png', '/card-back-9.png', '/card-back-10.png',
+  //   '/card-back-11.png', '/card-back-12.png', '/card-back-13.png', '/card-back-14.png', '/card-back-15.gif',''
+  // ];
+
   const cardSkins = [
-    'card-back-1.png', 'card-back-2.png', 'card-back-3.gif', 'card-back-4.gif', 'card-back-5.png',
-    'card-back-6.gif', 'card-back-7.png', 'card-back-8.png', 'card-back-9.png', 'card-back-10.png',
-    'card-back-11.png', 'card-back-12.png', 'card-back-13.png', 'card-back-14.png', 'card-back-15.gif'
+    '/react-memory/card-back-1.png',
+    '/react-memory/card-back-2.png',
+    '/react-memory/card-back-3.gif',
+    '/react-memory/card-back-4.gif',
+    '/react-memory/card-back-5.png',
+    '/react-memory/card-back-6.gif',
+    '/react-memory/card-back-7.png',
+    '/react-memory/card-back-8.png',
+    '/react-memory/card-back-9.png',
+    '/react-memory/card-back-10.png',
+    '/react-memory/card-back-11.png',
+    '/react-memory/card-back-12.png',
+    '/react-memory/card-back-13.png',
+    '/react-memory/card-back-14.png',
+    '/react-memory/card-back-15.gif'
   ];
 
   // shuffle logic
   const shuffleArray = (arr) => arr.sort(() => Math.random() - 0.5);
 
   // audio
-  const flipSound = new Audio('card-flip-SE.mp3');
-  const matchSound = new Audio('match-SE.mp3');
-  const winSound = new Audio('victory-SE.mp3');
+  const flipSound = new Audio('/card-flip-SE.mp3');
+  const matchSound = new Audio('/match-SE.mp3');
+  const winSound = new Audio('/victory-SE.mp3');
 
 
 
