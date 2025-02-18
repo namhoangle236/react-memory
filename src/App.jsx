@@ -31,7 +31,8 @@ const App = () => {
   //   '/card-back-1.png', '/card-back-2.png', '/card-back-3.gif', '/card-back-4.gif', '/card-back-5.png',
   //   '/card-back-6.gif', '/card-back-7.png', '/card-back-8.png', '/card-back-9.png', '/card-back-10.png',
   //   '/card-back-11.png', '/card-back-12.png', '/card-back-13.png', '/card-back-14.png', '/card-back-15.gif',''
-  // ];
+  // ];     
+  // Stupid ass shit doesn't work on deploy, but the mp3 work despite same path format?!?!?!
 
   const cardSkins = [
     '/react-memory/card-back-1.png',
@@ -55,11 +56,17 @@ const App = () => {
   const shuffleArray = (arr) => arr.sort(() => Math.random() - 0.5);
 
   // audio
-  const flipSound = new Audio('/card-flip-SE.mp3');
-  const matchSound = new Audio('/match-SE.mp3');
-  const winSound = new Audio('/victory-SE.mp3');
+  // const flipSound = new Audio('/card-flip-SE.mp3');
+  // const matchSound = new Audio('/match-SE.mp3');
+  // const winSound = new Audio('/victory-SE.mp3');
 
 
+  const flipSound = new Audio('/react-memory/card-flip-SE.mp3');
+  const matchSound = new Audio('/react-memory/match-SE.mp3');
+  const winSound = new Audio('/react-memory/victory-SE.mp3');
+
+  // WTF WTF WTF?? if card works then mp3 don't, of mp3 works then card don't 
+  // relative, absolute path dont work for SHIT! WTF this fucking REACT dogshit aaaaaaaaaaaaaaaaaaaa!!!!
 
 
   //============================================== Start / Reset Game ==============================================
